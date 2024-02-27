@@ -1,0 +1,144 @@
+.container {
+  max-width: 28rem;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  /* margin-inline: 2rem; */
+}
+
+.img-wrapper {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  width: auto;
+  height: 13.5rem;
+  background-image: url("src/images/illustration-hero.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-wrapper {
+  padding: 3rem;
+}
+
+h1 {
+  text-align: center;
+  color: var(--Dark-blue);
+}
+
+.summary-text {
+  text-align: center;
+  color: var(--Desaturated-blue);
+  padding: 1.5rem 0;
+  line-height: 1.5rem;
+}
+
+.plan-wrapper {
+  padding-inline: 1.5rem;
+  border-radius: 10px;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  background-color: var(--Very-pale-blue);
+}
+
+.plan-price-wrapper {
+  margin-right: 5rem;
+}
+
+.music-svg {
+  margin-right: 1.3rem;
+}
+
+.plan-title {
+  font-weight: 600;
+  color: var(--Dark-blue);
+  margin-bottom: 0.5rem;
+}
+
+.price-text {
+  color: var(--Desaturated-blue);
+}
+
+.plan-wrapper a {
+  color: var(--Bright-blue);
+  font-weight: 600;
+}
+
+.plan-wrapper a:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.755);
+}
+
+.cta-wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cta-wrapper button {
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: none;
+  height: 3rem;
+  background-color: var(--Bright-blue);
+  color: white;
+  border-radius: 10px;
+  box-shadow: -4px 15px 20px 4px hsla(245, 75%, 52%, 0.223);
+  margin: 1.8rem 0;
+  transition: 0.15s;
+}
+
+.cta-wrapper button:hover {
+  background-color: hsla(245, 75%, 52%, 0.755);
+}
+
+.cta-wrapper a {
+  font-weight: 600;
+  color: var(--Desaturated-blue);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.15s;
+  letter-spacing: 0.5px;
+}
+
+.cta-wrapper a:hover {
+  color: black;
+}
+
+@media (max-width: 460px) {
+  .img-wrapper {
+    height: 15rem;
+  }
+  .order-title {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .container {
+    width: 27rem;
+  }
+  .summary-text {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-inline: 0.5rem;
+  }
+  .plan-wrapper {
+    height: 6rem;
+    margin: 0.3rem 0;
+  }
+  .content-wrapper {
+    padding: 2rem 2rem 3rem 2rem;
+    /* padding: 2rem; */
+  }
+  .cta-wrapper button {
+    height: 4.3rem;
+  }
+
+  .plan-price-wrapper {
+    margin-right: 4rem;
+    width: 6rem;
+  }
+  .plan-title {
+    font-size: 10px;
+  }
+}

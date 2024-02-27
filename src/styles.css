@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+/* # Front-end Style Guide */
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "specimen", sans-serif;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background-color: var(--Pale-blue);
+}
+
+:root {
+  /* ### Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  /* ## Typography */
+
+  /* - Weights: 500, 700, 900 */
+}
+
+@media (max-width: 460px) {
+  * {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 5rem;
+  }
+  /* .content-wrapper {
+    padding: 1rem;
+  } */
+}
+
+@media (max-width: 350px) {
+  * {
+    font-size: 10px;
+  }
+}
